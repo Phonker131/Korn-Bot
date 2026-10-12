@@ -1,4 +1,9 @@
-token = 'MTA2NjQ3NDA0MTQwNzQ1MTIwNg.GJukkb.X-sbGS0LR2odIxpKABMgsMwts4WmnaHW2et2rw'  # Bot token, type: str
+import os
+
+# Set this in your shell; never commit a real bot token.
+token = os.environ.get("DISCORD_BOT_TOKEN", "").strip()
+if not token:
+    raise RuntimeError("Set DISCORD_BOT_TOKEN before starting Korn Bot")
 
 POST_ID = 1070832535283699772  # Selected message ID for giving roles, type: int
 
