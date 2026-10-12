@@ -1,53 +1,36 @@
 # Korn Bot
 
-**Korn Bot** is a music bot with ability to change roles using emoji's under the selected message and play music for discord server.
+A Python Discord bot for music playback and emoji-based role assignment.
 
-## Installation
+## Features
+- Play a song or playlist from a YouTube URL or a search term.
+- Pause, resume, skip, and leave voice channels.
+- Assign roles using reactions on a configured message.
 
-For users:
+## Commands
+| Command | Purpose |
+| --- | --- |
+| `h!play <URL or search term>` | Start playback |
+| `h!pause` | Pause playback |
+| `h!resume` | Resume playback |
+| `h!skip` | Skip the current track |
+| `h!leave` | Leave the voice channel |
+| `h!help` | Display command help |
 
-To use this bot just add it to your server using this link: [Bot link](https://discord.com/oauth2/authorize?client_id=1066474041407451206).
+The original documentation describes a maximum of 25 songs per playlist.
 
-For developers:
+## Project structure
+- [Bot.py](Bot.py): bot implementation.
+- [Config.py](Config.py): bot configuration.
+- [Documentation/](Documentation/): accompanying project documentation.
 
-If you want to make any adjustments to this project, check **reqirements.txt** to see the libs and versions used. Also to work with this project you need to have **Phython 3** installed on your pc (**link bellow**).
+## Development status
+This is a legacy project whose previous README dates the implementation to February 2023. Compatibility with current Discord and music-service APIs has not been verified.
 
--   Any version of Python 3 (Personaly recomend Python 3.11) [Download link](https://www.python.org/downloads/)
+The previous installation instructions referenced a requirements file, but none exists in the current repository root. A reproducible dependency list and configuration review are needed before a verified quick-start guide can be provided. Do not commit bot tokens.
 
-## Usage
-
-Commands list that bot supports:
-
-• **h!play <song/playlist link or song name>** - connects to your voice chat and starts to play the song or playlist you chose (only from YouTube and playlists with not more then 25 songs).
-
-• **h!help** - type this command in text-channel if you forgot bot commands, it will give whole list of available commands.
-
-• **h!pause** - pauses the song.
-
-• **h!resume** - if song is paused, starts playing again from the moment it was paused.
-
-• **h!skip** - skips to the next song.
-
-• **h!leave** - leaves your voice channel.
-
-Also bot can be used for automatic roles change on servers using emojis under selected message **(for more info about setting up this feature and config.py read accompanying document)**.
-
-## Support
-
-If you got any problems with work of this bot or you want to make adjustments you can contact me by this links:
-
--   My E-mail adress: <shapovaltim@gmail.com>
--   My Discord nickname: phonker\_
--   [My Instagram](https://instagram.com/s.h.a.p.o.v.a.l_t.i.m?igshid=NTc4MTIwNjQ2YQ==)
-
-## Authors and acknowledgment
-
-Special thanks to developer of this project Tymur Shapoval
+## Author
+Tymur Shapoval
 
 ## License
-
-[Apache 2.0](http://www.apache.org/licenses/LICENSE-2.0)
-
-## Project status
-
-Project is finished, but code can be outdated. **Current version of code is actual for February 2023.**
+See [LICENSE](LICENSE).
